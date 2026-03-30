@@ -1,11 +1,11 @@
-#2/bin/bash
+#!/bin/bash
 
-PACKAGE = "python3"
+PACKAGE="python3"
 
-if dpkg -l| grep -q $PACKAGE
+if dpkg -l | grep -q $PACKAGE
 then
-    echo "$package is installed"
+    echo "$PACKAGE is installed"
     python3 --version
 else
-    echo "$PACKAGE isNOT installed"
+    echo "$PACKAGE is NOT installed"
 fi
